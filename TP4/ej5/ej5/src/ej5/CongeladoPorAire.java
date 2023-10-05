@@ -17,10 +17,10 @@ public class CongeladoPorAire extends ProductoFrio {
 
     //Metodos
     public void getEtiqueta(){
-        System.out.println("Nombre:"+nombre+"\b"+"Fecha de vencimiento:"+fechaVencimiento+"\b"+
-                "Fecha de emvasado: "+fechaEnvasado+"\b"+"Granja de origen: "+granjaDeOrigen+"\b"+
-                "Codigo de org. de supervision alimentaria: "+codigo+"\b"+"Temperatura de mantenimiento:"+temperaturaDeMantenimiento
-                +"\b"+"Porcentaje de nitrogeno:"+nitrogeno +"\b"+"Porcentaje de oxigeno:"+oxigeno +"\b"+"Porcentaje de dioxido de carbono:"+dioxidoDeCarbono
-                +"\b"+"Porcentaje de Vapor de agua:"+vaporDeAgua);
+        System.out.println("Nombre:"+nombre+"\n"+"Fecha de vencimiento:"+fechaVencimiento+"\n"+
+                "Fecha de emvasado: "+fechaEnvasado+"\n"+"Granja de origen: "+granjaDeOrigen+"\n"+
+                "Codigo de org. de supervision alimentaria: "+codigo+"\n"+"Temperatura de mantenimiento:"+temperaturaDeMantenimiento
+                +"\n"+"Porcentaje de nitrogeno:"+nitrogeno +"\n"+"Porcentaje de oxigeno:"+oxigeno +"\n"+"Porcentaje de dioxido de carbono:"+dioxidoDeCarbono
+                +"\n"+"Porcentaje de Vapor de agua:"+vaporDeAgua);
     }
 }

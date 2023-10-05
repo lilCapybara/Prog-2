@@ -11,7 +11,7 @@ public class Alarma {
     //constructor
 
     public Alarma(ArrayList<Sensor> listaDeSensores, Timbre timbre, Luz luz) {
-        this.listaDeSensores = listaDeSensores;
+        this.listaDeSensores = new ArrayList<>(listaDeSensores);
         this.timbre = timbre;
         this.luz = luz;
     }
