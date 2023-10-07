@@ -1,4 +1,4 @@
-package ej3;
+package ej4;
 import java.util.ArrayList;
 public class Ciudad {
     private String nombre;
@@ -10,7 +10,9 @@ public class Ciudad {
     private double imp5;
     private double gastoMantenimiento;
 
-    public Ciudad(String nombre, int poblacion, double imp1, double imp2, double imp3, double imp4, double imp5, double gastoMantenimiento) {
+    private ArrayList<Contribuyente> listaDeContribuyentes;
+
+    public Ciudad(String nombre, int poblacion, double imp1, double imp2, double imp3, double imp4, double imp5, double gastoMantenimiento, ArrayList<Contribuyente>listaDeContribuyentes) {
         this.nombre = nombre;
         this.poblacion = poblacion;
         this.imp1 = imp1;
@@ -19,6 +21,7 @@ public class Ciudad {
         this.imp4 = imp4;
         this.imp5 = imp5;
         this.gastoMantenimiento = gastoMantenimiento;
+        this.listaDeContribuyentes=new ArrayList<>(listaDeContribuyentes);
     }
 
     public double getTotalRecaudado() {
@@ -35,6 +38,14 @@ public class Ciudad {
 
     public String getNombre() {
         return nombre;
+    }
+
+    public void getTotalDeRecaudacion(){
+        double recaudacion=0;
+        for(Contribuyente persona : listaDeContribuyentes){
+            recaudacion+=persona.getRecaudacion();
+        }
+        System.out.println("Recaudacion total: "+recaudacion);
     }
 }
 
